@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #232527;
+        opacity: 0.24;
+      }
+
+      .cls-2 {
+        font-size: 30px;
+        fill: #fff;
+        font-family: FontAwesome;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_59_copy" data-name="Rectangle 59 copy" class="cls-1" width="40" height="40"/>
+  <text id="_" data-name="" class="cls-2" transform="matrix(-1, 0, 0, 1, 25, 30)"></text>
+</svg>

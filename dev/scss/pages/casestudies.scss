@@ -1,0 +1,107 @@
+.case-studies .portfolio {
+	background: #ffffff;
+}
+.case-studies .portfolio__wrapper {
+	margin-top: 95px;
+}
+
+.case-studies .features__item-number {
+	color: #2c333d;
+}
+.case-studies .features__row {
+	margin-top: 0;
+}
+.portfolio__controller-wrapper {
+	text-align: center;
+}
+.portfolio__controller-list {
+	margin-top: 75px;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+	display: inline-block;
+}
+.portfolio__controller-item {
+	display: inline-block;
+	padding: 15px 35px;
+	text-transform: uppercase;
+	font-size: .875rem;
+	font-family: 'JosefinSans-Bold';
+	color: #bebebe;
+	position: relative;
+	cursor: pointer;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 2px;
+		background: #ffa000;
+		transition: .3s;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: -1px;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		width: 1px;
+		height: 20px;
+		background: #eeeeee;
+		right: 0;
+		top: 50%;
+		margin-top: -10px;
+	}
+	&:last-child:before {
+		display: none;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+	&:first-child {
+		padding-left: 0;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+	&.active {
+		color: #ffa000;
+		&:after {
+			width: 100%;
+		}
+	}
+}
+.portfolio__load-more {
+	text-align: center;
+	margin-top: 100px;
+	&-btn {
+		padding: 18px 50px;
+		text-transform: uppercase;
+	}
+}
+.features.features-section {
+	display: block;
+	padding: 110px 0 10px;
+}
+@media all and (max-width: 991px) {
+	.portfolio__controller-item:before, .portfolio__controller-item:after {
+		display: none;
+	}
+}
+
+@media all and (min-width: 991px) {
+	.case-studies .features__item {
+		width: 25%;
+	}
+}
+@media all and (max-width: 680px) {	
+	.portfolio__controller-item, .portfolio__controller-list {
+		display: block;
+
+	}
+	.case-studies .portfolio__controller-item {
+		padding: 15px 35px;
+	}
+	
+}

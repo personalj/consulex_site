@@ -1,0 +1,131 @@
+.contacts {
+	&__wrapper {
+		padding: 130px 0 150px;
+		
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	&__col {
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 50%;
+	}
+	&__info-row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+	}
+	&__info-icon {
+		width: 33px;
+		i {
+			font-size: 1.1875rem;
+		}
+
+	}
+	&__info-title {
+		color: #2c3035;
+		text-transform: uppercase;
+		 font-family: 'JosefinSans-Bold';
+		 margin-bottom: 13px;
+		 line-height: 1.5;
+	}
+	&__info-col {
+		width: 50%;
+		display: flex;
+		// @extend .contacts__col;
+	}
+	&__info-text {
+		margin-bottom: 25px;
+	}
+	&__info-descr {
+		font-size: .8125rem;
+		line-height: 24px;
+		
+	}
+	&__info-link {
+		@extend .contacts__info-descr;
+		color: #525252;
+		display: block;
+	}
+}
+.contacts__section-form {
+	margin-right: 23px;
+}
+.contacts__section-form-title {
+	font-family: 'JosefinSans-Bold';
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	color: #2c3035;
+	margin-bottom: 45px;
+
+}
+.contacts__section-form-row {
+	margin-bottom: 30px;
+}
+.contacts__section-form-row_double {
+	display: flex;
+	margin-left: -25px;
+	.contacts__section-form-input {
+		margin-left: 25px;
+		width: calc(100% / 2 - 25px);
+	}
+}
+.contacts-section {
+	.contact-form__submit {
+		max-width: 150px;
+		margin-top: 20px;
+	}
+}
+.contacts-section .contact-form__row_double {
+	display: flex;
+	margin-left: -25px;
+	 .contact-form__input {
+		width: calc(100% / 2 - 25px);
+		margin-left: 25px;
+	 }
+}
+.contacts-section .contact-form__row {
+	margin-bottom: 30px;
+
+}
+.contacts-section .contact-form {
+	&__textarea {
+		min-height: 100px;
+	}
+}
+#map {
+	height: 700px;
+	.gmnoprint {
+		display: none;
+	}
+}
+@media all and (max-width: 991px) {
+	.contacts__wrapper {
+		padding: 50px 0;
+	}
+	.contacts-section .contact-form__row_double {
+		display: block;
+	}
+	.contacts-section .contact-form__row_double .contact-form__input {
+		width: 100%;
+		&:first-child {
+			margin-bottom:30px;
+		}
+	}
+	.contacts__col {
+		width: 100%;
+	}
+	#map {
+		height: 500px;
+		margin-top: 50px;
+	}
+}
+@media all and (max-width: 400px) {
+	.contacts__info-col {
+		width: 100%;
+	}
+}
