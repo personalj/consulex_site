@@ -1,2 +1,2 @@
 # Consulex
-# Верстка - Gulp/Jquery/Scss
+ Верстка - Gulp/Jquery/Scss
