@@ -9,7 +9,6 @@ $(document).ready(function() {
 				$('[data-target="'+$this.data('opener')+'"]').addClass('active');
 			}
 	});
-	// new WOW().init();
 	 $(".hero-slider__list").lightSlider({
 	 	item: 1,
 	 	autoWidth: false,
@@ -72,42 +71,6 @@ $(document).ready(function() {
 	        });
 	    }   
 	 });  
-	 // var $grid = $('.portfolio__wrapper').imagesLoaded( function() {
-	 //    $grid.isotope({
-	 //     	itemSelector: '.portfolio__item',
-	 //     	percentPosition: true,
-	 //    });
-	 // });
-	 // $grid.isotope({
-	 //    itemSelector: '.portfolio__item',
-	 //    layoutMode: 'fitRows',
-	 //        // fitRows: {
-	 //       	//    gutter: 30
-	 //       	// }
-
-	 // });
-	 // $('.portfolio__controller-item').click(function(){
-	 // 	$('.portfolio__controller-item').removeClass('active');
-	 // 	$(this).addClass('active');
-	 // 	var selector = $(this).attr('data-filter');
-	 // 	$grid.isotope({
-	 // 		filter: selector
-	 // 	});
-	 // 	return false;
-	 // });
-	 // $('.tabs-link').on('click', function(e) {
-	 // 	e.preventDefault();
-	 // 	var item = $(this).closest('.tabs-controler'),
-	 // 		contentWrapper = item.closest('.tabs'),
-	 // 		contentItem = contentWrapper.find('.tabs-target'),
-	 // 		itemPosition = item.data('class');
-
-	 // 	contentItem.filter('.tabs-target_' + itemPosition)
-	 // 	.add(item)
-	 // 	.addClass('active')
-	 // 	.siblings()
-	 // 	.removeClass('active');
-	 // });
 	 $('.accodeon-link').on('click', function(e) {
 	 	e.preventDefault();
 	 	var item = $(this).closest('.accodeon-item'),
@@ -136,10 +99,6 @@ $(document).ready(function() {
 	    $grid.isotope({
 	       itemSelector: '.portfolio__item',
 	       layoutMode: 'fitRows',
-	       // fitRows: {
-	      	//    gutter: 30
-	      	// }
-
 	    });
 	    $('.portfolio__controller-item').click(function(){
 			$('.portfolio__controller-item').removeClass('active');
@@ -164,41 +123,12 @@ $(document).ready(function() {
 	}
 
 	AOS.init();
-	// (function(){
-	// 	var show = true;
-	// 	    // var countbox = ".features";
-	// 	   $(window).on("scroll load resize", function(){
-	// 	       if(!show) return false;
-	// 	       if($('.team__member-wrapper').length){
-	// 	       	 var e_top = $(".team__member-wrapper").offset().top;
-	// 	       	 var e_height = $(".team__member-wrapper").outerHeight();
-	// 	       }                
-	// 	       var w_top = $(window).scrollTop();       
-		         
-	// 	       var w_height = $(window).height();       
-	// 	       var d_height = $(document).height();      
-	// 	      if(w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
-	// 	      		$('.team__member-skills-item').addClass('active', function() {
-		      			
-	// 	           });
-	// 	       };
-	// 	});
-	// }());
 	$('.team__member-skills-bar-inner').each(function() {
 	  var $this=$(this);
 	  var item=$this.closest('.team__member-skills-item');
 	  var number=item.find('.team__member-skills-percentage').text();
 	  var container = $this.closest('.team__member-wrapper');
 	  $this.css('width', number );
-	  // var width = 0;
-	  // var timerId = setInterval(function() {
-	  // 	if (width <= number) { 
-	  // 		$this.css('width', width++ +"%"); 
-	  // 	}else {   
-	  // 		clearInterval(timerId);
-
-	  // 	}    
-	  // 	}, 5);
 	});
 	$('.tabs-link').on('click', function(e) {
 		 	e.preventDefault();
@@ -232,16 +162,7 @@ $(document).ready(function() {
 		 	.removeClass('active');
 	  
 	  
-		 });
-	// $('.tabs-link').on('click', function(e) {
-	// 	 	e.preventDefault();
-	// 	 	var item = $(this).closest('.tabs-controler'),
-	// 	 		contentWrapper = item.closest('.tabs'),
-	// 	 		contentItem = contentWrapper.find('.tabs-target'),
-	// 	 		itemActive = contentItem.filter('.active');
-	     
-	// 	});
-	// });   
+		 });   
 	$('.team__member-skills-bar-inner').each(function() {
 		  var $this=$(this),
 	 item=$this.closest('.team__member-skills-item'),
@@ -249,82 +170,6 @@ $(document).ready(function() {
 	    width;
 		  $this.css('width', number +"%");;
 	});
-		// $('.team__member-wrapper.active').each(function() {
-			
-		// });
-		
-
-		  // var timer = setInterval(funcrion(){
-		  // 	if (width <= number) {
-		  // 		$this.css('width', width++); 
-		  // 	}else {
-		  // 		 clearInterval(timer);
-		  // 	}
-		  // }, 1);
-		 
-		  // $this.css('width', number);  
-		// });	
-	
-	// $(window).on("scroll load resize", function(){
-	// var countbox = $(".features__item");     
-	// var w_top = $(window).scrollTop();       
-	// var e_top = countbox.offset().top;    
-	// var w_height = $(window).height();       
-	// var d_height = $(document).height();      
-	// var e_height = countbox.outerHeight();
-	//  if(w_top + 50 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
-	//     $('.features__item').addClass('active');
-	     
-	//   }else {
-	//   	$('.features__item').removeClass('active');
-	//   }
-
-	// });
-	// (function(){
-	// 	var show = true;
-	// 	    // var countbox = ".features";
-	// 	   $(window).on("scroll load resize", function(){
-	// 	       if(!show) return false;
-	// 	       if($('.team__member-wrapper').length){
-	// 	       	 var e_top = $(".team__member-wrapper").offset().top;
-	// 	       	 var e_height = $(".team__member-wrapper").outerHeight();
-	// 	       }                
-	// 	       var w_top = $(window).scrollTop();       
-		         
-	// 	       var w_height = $(window).height();       
-	// 	       var d_height = $(document).height();
-	// 	       // var container = $(".team__member-wrapper.active");
-	// 	       // var itemActive = containerActive.find(".team__member-skills-bar-inner");
-	// 	      if(w_top + 300 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
-	// 	      	     // var itemActive = container.find(".team__member-skills-bar-inner");
-	// 	      	     // console.log(itemActive);
-	// 	      	     $(".team__member-skills-bar-inner").each(function() {
-	// 	      	     var $this=$(this);
-	// 	      	     var item=$this.closest('.team__member-skills-item');
-	// 	      	     var number=item.find('.team__member-skills-percentage').data('number');
-	// 	      	     var container = $this.closest('.team__member-wrapper');
-	// 	      	     // var width = 0;
-	// 	      	     $this.css('width', number +"%");
-	// 	      	     // if(container.hasClass('active')) {
-	// 	      	     // 	var timerId = setInterval(function() {
-	// 	      	     // 		if (width <= number) { 
-	// 	      	     // 			$this.css('width', width++ +"%"); 
-	// 	      	     // 		}else {   
-	// 	      	     // 			clearInterval(timerId);
-
-	// 	      	     // 		}    
-	// 	      	     // 		}, 5);
-	// 	      	     // }
-		      	    
-	// 	      	   });
-		           	 
-	// 	           show = false;
-	// 	       }
-	// 	});
-	// }());
-
-
-
 	(function(){
 		var show = true;
 		    // var countbox = ".features";
